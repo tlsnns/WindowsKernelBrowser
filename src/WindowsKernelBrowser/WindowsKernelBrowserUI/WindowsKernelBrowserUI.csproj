@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8B28566-F912-4EB1-B7E7-68C41BA9F508}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WindowsKernelBrowserUI</RootNamespace>
+    <AssemblyName>WindowsKernelBrowserUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PInvoke.Kernel32, Version=0.6.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Kernel32.0.6.49\lib\net45\PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core, Version=0.6.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.6.49\lib\net20\PInvoke.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DescriptorPrivilegeLevelType.cs" />
+    <Compile Include="Device.cs" />
+    <Compile Include="CTLCodeUtility.cs" />
+    <Compile Include="GDTNamespace\CodeSegmentDescriptors.cs" />
+    <Compile Include="GDTNamespace\DataSegmentDescriptors.cs" />
+    <Compile Include="GDTNamespace\GranularityTypes.cs" />
+    <Compile Include="GDTNamespace\NonSystemSegmentDescriptor.cs" />
+    <Compile Include="GDTNamespace\NonSystemSegmentTypes.cs" />
+    <Compile Include="GDTNamespace\SegmentDescriptorTypes.cs" />
+    <Compile Include="GDTNamespace\GDT.cs" />
+    <Compile Include="GDTNamespace\SegmentDescriptorsFactory.cs" />
+    <Compile Include="GDTNamespace\GDTFactory.cs" />
+    <Compile Include="GDTNamespace\GDTEntity.cs" />
+    <Compile Include="GDTNamespace\TSSSegmentDescriptors.cs" />
+    <Compile Include="IDTNamespace\IDT.cs" />
+    <Compile Include="IDTNamespace\IDTFactory.cs" />
+    <Compile Include="KernelTable.cs" />
+    <Compile Include="KernelTableFactory.cs" />
+    <Compile Include="SystemSegmentAndGateDescriptorType.cs" />
+    <Compile Include="IDTNamespace\IDTEntity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DeviceDataTransmitter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

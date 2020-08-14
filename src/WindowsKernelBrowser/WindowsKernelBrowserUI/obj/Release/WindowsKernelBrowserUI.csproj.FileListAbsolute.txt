@@ -1,0 +1,11 @@
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\WindowsKernelBrowserUI.exe.config
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\WindowsKernelBrowserUI.exe
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\WindowsKernelBrowserUI.pdb
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\PInvoke.Kernel32.dll
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\PInvoke.Windows.Core.dll
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\PInvoke.Kernel32.xml
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\bin\Release\PInvoke.Windows.Core.xml
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\obj\Release\WindowsKernelBrowserUI.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\obj\Release\WindowsKernelBrowserUI.csproj.CopyComplete
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\obj\Release\WindowsKernelBrowserUI.exe
+C:\Users\admin\Desktop\WindowsKernelBrowser\WindowsKernelBrowserUI\obj\Release\WindowsKernelBrowserUI.pdb
